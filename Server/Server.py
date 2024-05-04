@@ -75,10 +75,13 @@ class Server:
         for member in self.members:
             member[1].send(f'update_members:{member_list}'.encode())
     def notify_exit(self, source, nickname):
-        self.members.remove((nickname, source))
-        member_list = ""
-        for member in self.members:
-            member_list += f'{member[0]};'
-            member[1].send(f'message: {nickname} 님이 나갔습니다'.encode())
+        try:
+            self.members.remove((nickname, source))
+            member_list = ""
+            for member in self.members:
+                member_list += f'{member[0]};'
+                member[1].send(f'message: {nickname} 님이 나갔습니다'.encode())
 
-        self.update_members(member_list)
+            self.update_members(member_list)
+        except:
+            print('Error: 닉네임 입력 단계에서 종료된 경우')
