@@ -59,5 +59,21 @@ gildong-hong 연결 후, helloworld 연결이 이루어진 상태
 ![alt text](images/image-10.png)
 + gildong-hong이 채팅 중인 상황에서 gildong-hong 닉네임으로 접속을 시도하는 경우, 닉네임 중복에 걸리는 모습. 중복되지 않은 닉네임을 입력할 때까지 반복됨.
 
-# 추후 일정
-GUI 추가 예정,,
+# GUI 추가
+1) 기본 화면
+    
+![alt_text](images/img-11.png)
+
+2) 닉네임 입력화면
+
+![alt_text](images/img-12.png)
+
+3) 채팅 화면
+
+![alt_text](images/img-13.png)
++ 나와 상대방이 구분됨
++ 입장 및 퇴장 알림이 존재
++ 채팅을 하고 있는 상대들이 모두 보임
+
+# 시연 영상
+[![video label](http://img.youtube.com/vi/xdKqECPz6rM/0.jpg)](https://youtu.be/xdKqECPz6rM)
