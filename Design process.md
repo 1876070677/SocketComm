@@ -30,4 +30,4 @@
 ![img-16.jpg](images%2Fimg-16.jpg)
 
 ## 시스템 흐름도
-![img-17.jpg](images%2Fimg-17.jpg)
+![img.png](images/img-17.png)
