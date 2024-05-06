@@ -59,6 +59,8 @@ gildong-hong 연결 후, helloworld 연결이 이루어진 상태
 ![alt text](images/image-10.png)
 + gildong-hong이 채팅 중인 상황에서 gildong-hong 닉네임으로 접속을 시도하는 경우, 닉네임 중복에 걸리는 모습. 중복되지 않은 닉네임을 입력할 때까지 반복됨.
 
+### ___콘솔 형태에서 GUI 형태로 수정되었습니다___
+
 # GUI 추가
 1) 기본 화면
     
