@@ -77,5 +77,12 @@ gildong-hong 연결 후, helloworld 연결이 이루어진 상태
 + 입장 및 퇴장 알림이 존재
 + 채팅을 하고 있는 상대들이 모두 보임
 
+4) 공지 기능 추가
+
+![alt_text](images/img-18.png)
+![alt_text](images/img-19.png)
+
++ 공지사항을 설정할 수 있습니다.
++ 뒤늦게 들어온 사람도 등록된 공지를 볼 수 있습니다.
 # 시연 영상
 [![video label](http://img.youtube.com/vi/xdKqECPz6rM/0.jpg)](https://youtu.be/xdKqECPz6rM)
