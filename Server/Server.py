@@ -7,6 +7,7 @@ class Server:
         self.port = 4000
         self.threads = []
         self.members = []
+        self.announce = ""
 
     def test(self):
         print("Test method of server class")
@@ -40,9 +41,13 @@ class Server:
                     client_socket.send("login:fail".encode())
             print(nickname)
             client_socket.send("login:success".encode())
+            if self.announce != "":
+                client_socket.send(f"announce:{self.announce}".encode())
             self.notify_enter(client_socket, nickname)
             while True:
                 message = client_socket.recv(1024).decode()
+                if 'announce' in message:
+                    self.announce = message.split(":")[1]
                 self.broadcast(nickname, message)
         except:
             self.notify_exit(client_socket, nickname)
@@ -59,7 +64,7 @@ class Server:
     def broadcast(self, nickname, message):
         for member in self.members:
             if member[0] != nickname:
-                member[1].send(f'message: {message}'.encode())
+                member[1].send(f'{message}'.encode())
 
     def notify_enter(self, source, nickname):
         self.members.append((nickname, source))
